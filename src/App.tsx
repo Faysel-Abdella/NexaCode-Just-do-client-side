@@ -1,7 +1,12 @@
 import "./App.css";
+import FeaturesPage from "./pages/FeaturesPage";
 
 function App() {
-  return <></>;
+  return (
+    <>
+      <FeaturesPage />
+    </>
+  );
 }
 
 export default App;

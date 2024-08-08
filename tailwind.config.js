@@ -2,7 +2,15 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        fredoka: ["Fredoka", "sans-serif"],
+        poppins: ["Poppins", "sans-serif"],
+      },
+      colors: {
+        fade: "#767678",
+      },
+    },
   },
   plugins: [],
 };
