@@ -4,7 +4,7 @@ import assets from "../../assets/index";
 const Steps = () => {
   return (
     <section className="mt-24 px-5 flex flex-wrap  justify-center    w-full">
-      <div className="w-1/2 max-lg:w-full mb-20 ">
+      <div className="w-1/2 max-lg:w-full mb-20  lg:pr-[25px]">
         <Step
           img={assets.kids}
           title="Can you speak naturally?"
@@ -14,15 +14,48 @@ const Steps = () => {
         />
       </div>
       <div className="w-1/2 max-lg:w-full mb-20">
-        <Step
-          img={assets.study}
-          title="Can you speak naturally?"
-          subtitle="Speaking practice should be first for learning languages or memorizing something."
-          contentOne="Just DO is a learning service to help learners practice speaking or memorizing with AI voice while listening and following along."
-          contentTwo="Try practicing speaking in various languages from around the world."
-        />
+        <section>
+          <div>
+            <img
+              src={assets.study}
+              alt="intro"
+              className="lg:w-[450px] lg:h-[350px] object-cover w-full h-[260px] rounded-lg"
+            />
+            <h1 className="text-black text-[22px] lg:text-[32px] font-bold my-3">
+              The best way for memorizing
+            </h1>
+            <h2 className="text-[#006CD8] text-[15px] font-medium lg:text-[28px]">
+              Speaking practice is not necessarily limited to language learning.
+            </h2>
+            <h2 className="text-[#006CD8] text-[15px] font-medium lg:text-[28px] mb-3">
+              It can be used for everything you need to memorize.
+            </h2>
+            <p className="text-fade text-[15px] lg:text-[24px]">
+              When you give a presentation, get a job interview or make a
+              speech, You’ll have to practice speaking and memorizing.
+            </p>
+            <p className="text-fade text-[15px] lg:text-[24px]">
+              This app can be used to help you :
+            </p>
+            <ul>
+              <li className="text-fade text-[15px] lg:text-[24px]">
+                • learn languages
+              </li>
+              <li className="text-fade text-[15px] lg:text-[24px]">
+                • practice speaking for presentations
+              </li>
+              <li className="text-fade text-[15px] lg:text-[24px]">
+                • memorize a script
+              </li>
+              <li className="text-fade text-[15px] lg:text-[24px]">
+                • memorize anything important like economic terms, medical words
+                and so on.
+              </li>
+            </ul>
+          </div>
+        </section>
       </div>
-      <div className="w-1/2 max-lg:w-full mb-20 m-0  pr-[25px]">
+      <div className="w-1/2 max-lg:w-full mb-20 m-0  lg:pr-[25px]">
         <Step
           img={assets.kids}
           title="What you want, What you need"

@@ -27,12 +27,12 @@ const Step = ({
         <h2 className="text-[#006CD8] text-[15px] font-medium lg:text-[28px] mb-3">
           {subtitle}
         </h2>
-        <p className="text-fade text-[15px] lg:text-[28px]">{contentOne}</p>
+        <p className="text-fade text-[15px] lg:text-[24px]">{contentOne}</p>
         {contentTwo && (
-          <p className="text-fade text-[15px] lg:text-[28px]">{contentTwo}</p>
+          <p className="text-fade text-[15px] lg:text-[24px]">{contentTwo}</p>
         )}
         {contentThree && (
-          <p className="text-fade text-[15px] lg:text-[28px]">{contentThree}</p>
+          <p className="text-fade text-[15px] lg:text-[24px]">{contentThree}</p>
         )}
       </div>
     </section>
