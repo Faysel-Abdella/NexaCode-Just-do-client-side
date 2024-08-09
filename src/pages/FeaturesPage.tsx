@@ -1,8 +1,8 @@
 import assets from "../assets/index";
-import Library from "../components/Library";
-import Group from "../components/Group";
-import Drill from "../components/Drill";
-import Profile from "../components/Profile";
+import Library from "../components/features-page/Library";
+import Group from "../components/features-page/Group";
+import Drill from "../components/features-page/Drill";
+import Profile from "../components/features-page/Profile";
 
 const FeaturesPage = () => {
   return (

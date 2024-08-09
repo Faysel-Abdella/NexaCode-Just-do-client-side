@@ -10,6 +10,9 @@ export default {
       colors: {
         fade: "#767678",
       },
+      backgroundImage: {
+        "hero-bg": "url('/src/assets/images/service-page/hero.png')",
+      },
     },
   },
   plugins: [],

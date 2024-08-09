@@ -1,5 +1,4 @@
-import assets from "../assets/index";
-
+import assets from "../../assets/index";
 const Library = () => {
   return (
     <section className="py-8 px-5 font-poppins md:flex md:items-center md:justify-center gap-5">

@@ -1,4 +1,4 @@
-import assets from "../assets/index";
+import assets from "../../assets/index";
 
 const Group = () => {
   return (
