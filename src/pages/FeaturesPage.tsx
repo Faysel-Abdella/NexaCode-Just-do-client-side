@@ -6,7 +6,7 @@ import Profile from "../components/Profile";
 
 const FeaturesPage = () => {
   return (
-    <section className="py-10">
+    <section className="py-10 max-container">
       <header className="text-center flex justify-center items-center">
         <div>
           <h1 className="text-[46px] max-md:text-[32px]">
