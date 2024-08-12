@@ -49,6 +49,7 @@ import copy from "./icons/service-page/copy.png";
 import logoBlue from "./icons/login-page/logo-blue.svg";
 import globalBlack from "./icons/login-page/global.svg";
 import downBlack from "./icons/login-page/down-arrow.svg";
+import password from "./icons/login-page/password.svg";
 
 export default {
   hero,
@@ -102,4 +103,5 @@ export default {
   logoBlue,
   globalBlack,
   downBlack,
+  password,
 };
