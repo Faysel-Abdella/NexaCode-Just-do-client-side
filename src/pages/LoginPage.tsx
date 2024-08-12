@@ -1,10 +1,6 @@
-import { useState } from "react";
 import assets from "../assets/index";
 
 const LoginPage = () => {
-  const [language, setLanguage] = useState<"EN" | "KR">("EN");
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
   return (
     <section className="max-w-[800px] mx-auto px-3 font-poppins">
       <header className=" lg:py-10 ">
