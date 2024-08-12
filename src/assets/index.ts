@@ -10,6 +10,9 @@ import groupImage02 from "./images/feature-page/group-image-02.png";
 import drillIcon from "./icons/feature-page/drill-white.png";
 import drillImage from "./images/feature-page/drill-image-01.png";
 import drillImage02 from "./images/feature-page/drill-image-02.png";
+import profile from "./images/feature-page/profile.png";
+import profileTop from "./images/feature-page/profile_top.png";
+import profileBottom from "./images/feature-page/profile_bottom.png";
 import profileIcon from "./icons/feature-page/profile-white.png";
 import profileImage from "./images/feature-page/profile-image-01.png";
 import profileImage02 from "./images/feature-page/profile-image-02.png";
@@ -60,6 +63,9 @@ export default {
   drillIcon,
   drillImage,
   drillImage02,
+  profile,
+  profileTop,
+  profileBottom,
   profileIcon,
   profileImage,
   profileImage02,

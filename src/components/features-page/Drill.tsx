@@ -34,8 +34,16 @@ const Drill = () => {
       </div>
 
       <div className="flex justify-center items-center">
-        <img src={assets.drillImage} alt="Drill" />
-        <img src={assets.drillImage02} alt="Drill" />
+        <img
+          src={assets.drillImage}
+          alt="Drill"
+          className="w-[164px] h-[258px]"
+        />
+        <img
+          src={assets.drillImage02}
+          alt="Drill"
+          className="w-[164px] h-[258px]"
+        />
       </div>
     </section>
   );

@@ -24,10 +24,10 @@ const FeaturesPage = () => {
           <p className="text-[36px] max-md:text-[26px]">
             Don’t think! No time!
           </p>
-          <div className="flex justify-center mt-7">
+          {/* <div className="flex justify-center mt-7">
             <img src={assets.feature01} alt="feature-example-01" />
             <img src={assets.feature02} alt="feature-example-02" />
-          </div>
+          </div> */}
         </div>
       </header>
 

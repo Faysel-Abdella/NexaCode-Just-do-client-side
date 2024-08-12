@@ -33,8 +33,16 @@ const Library = () => {
       </div>
 
       <div className="flex justify-center items-center">
-        <img src={assets.libraryImage} alt="library" />
-        <img src={assets.libraryImage02} alt="library" />
+        <img
+          src={assets.libraryImage}
+          alt="library"
+          className="w-[164px] h-[258px]"
+        />
+        <img
+          src={assets.libraryImage02}
+          alt="library"
+          className="w-[164px] h-[258px]"
+        />
       </div>
     </section>
   );

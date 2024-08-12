@@ -2,7 +2,7 @@ import assets from "../../assets/index";
 
 const Group = () => {
   return (
-    <section className="py-8 px-5 font-poppins md:flex md:items-center md:justify-center gap-5">
+    <section className="py-8 px-5 font-poppins md:flex md:flex-row-reverse md:items-center md:justify-center gap-5">
       <div className="md:w-[50%]">
         <header className="flex items-center gap-5 pb-5">
           <img src={assets.groupIcon} alt="Group" />
@@ -33,8 +33,16 @@ const Group = () => {
       </div>
 
       <div className="flex justify-center items-center">
-        <img src={assets.groupImage} alt="Group" />
-        <img src={assets.groupImage02} alt="Group" />
+        <img
+          src={assets.groupImage}
+          alt="Group"
+          className="w-[164px] h-[258px]"
+        />
+        <img
+          src={assets.groupImage02}
+          alt="Group"
+          className="w-[164px] h-[258px]"
+        />
       </div>
     </section>
   );
