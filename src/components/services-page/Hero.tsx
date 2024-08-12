@@ -3,15 +3,15 @@ import { useState } from "react";
 import assets from "../../assets/index";
 
 const Hero = () => {
-  const [language, setLanguage] = useState<"EN" | "KR">("EN");
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  // const [language, setLanguage] = useState<"EN" | "KR">("EN");
+  // const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeTab, setActiveTab] = useState<"what" | "app" | "explore">(
     "what"
   );
   return (
     <section>
       <header className=" bg-hero-bg  bg-no-repeat bg-center bg-cover ">
-        <nav className="p-6">
+        {/* <nav className="p-6">
           <div className="max-container flex justify-between items-center z-10">
             <div>
               <img src={assets.logo} alt="logo" className="md:h-[50px] " />
@@ -58,7 +58,7 @@ const Hero = () => {
               </ul>
             </button>
           </div>
-        </nav>
+        </nav> */}
 
         <div className="pl-4 md:pl-10 pt-40 md:pt-[35rem] pb-10 md:pb-[13rem]">
           <h1 className="text-white text-[36px] md:text-[62px]  font-fredoka font-[800] tracking-wider">

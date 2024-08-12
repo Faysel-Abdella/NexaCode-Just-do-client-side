@@ -43,6 +43,10 @@ import students from "./icons/service-page/students.png";
 import home from "./icons/service-page/home.png";
 import copy from "./icons/service-page/copy.png";
 
+import logoBlue from "./icons/login-page/logo-blue.svg";
+import globalBlack from "./icons/login-page/global.svg";
+import downBlack from "./icons/login-page/down-arrow.svg";
+
 export default {
   hero,
   feature01,
@@ -88,4 +92,8 @@ export default {
   students,
   home,
   copy,
+
+  logoBlue,
+  globalBlack,
+  downBlack,
 };
