@@ -19,7 +19,9 @@ const Step = ({
     <section>
       <div
         className={`${
-          isReverse ? "flex flex-row-reverse items-center" : "flex items-center"
+          isReverse
+            ? "flex max-md:flex-col flex-row-reverse items-center"
+            : "flex max-md:flex-col items-center"
         } gap-8`}
       >
         <img

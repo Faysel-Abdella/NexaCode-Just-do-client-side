@@ -16,7 +16,7 @@ const Steps = () => {
       </div>
       <div className=" max-lg:w-full mb-20">
         <section>
-          <div className="flex items-center gap-8">
+          <div className="flex max-[800px]:flex-col items-center gap-8">
             <img
               src={assets.study}
               alt="intro"

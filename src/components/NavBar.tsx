@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 
-import favIcon from "../assets/icons/service-page/logo.png";
+import favIcon from "../assets/images/just-logo.png";
 
 import { AiOutlineAlignRight } from "react-icons/ai";
 import { AiOutlineClose } from "react-icons/ai";
@@ -142,12 +142,18 @@ const NavBar = () => {
     //   </nav>
     // </header>
 
-    <nav className=" bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between  mx-auto p-4">
-        <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
-          <img src={favIcon} className="h-8" alt="Just do Logo" />\
-        </a>
-        <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+    <nav className=" bg-white  fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
+      <div className="max-w-screen-xl flex flex-wrap items-center justify-between  mx-auto p-4 max-md:py-2">
+        <Link
+          to="home"
+          className="flex items-center space-x-3 rtl:space-x-reverse"
+        >
+          <img src={favIcon} className="size-12 scale-125" alt="Just do Logo" />
+        </Link>
+        <div
+          className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse 
+        "
+        >
           <button>
             <ul className="flex gap-5 relative">
               <li
@@ -155,13 +161,13 @@ const NavBar = () => {
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
               >
                 <img src={assets.global} alt="home" className="md:scale-125" />
-                <p className="md:text-[20px] font-extrabold text-white">
+                <p className="md:text-[20px] font-extrabold text-gray-900">
                   {language}
                 </p>
                 <img
                   src={assets.down}
                   alt="arrow"
-                  className="md:h-[16px] md:w-[22px] h-[15px] w-[20px]"
+                  className="md:h-[16px] md:w-[22px] h-[15px] w-[20px] "
                 />
 
                 <ul
@@ -213,37 +219,38 @@ const NavBar = () => {
           }  w-full md:flex md:w-auto md:order-1`}
           id="navbar-sticky"
         >
-          <ul className="flex items-center  flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+          <ul className="flex items-center  flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-200 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white ">
             <li>
-              <a
-                href="#"
-                className="block py-2 px-3 text-white  rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
+              <Link
+                to="home"
+                activeClass="active-link"
+                className="cursor-pointer md:text-[21px] block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500  "
                 aria-current="page"
               >
                 What's
-              </a>
+              </Link>
             </li>
 
             <li>
-              <a
-                href="#"
-                className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+              <Link
+                to="app"
+                className="cursor-pointer md:text-[21px] block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500  "
               >
                 App
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="#"
-                className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+              <Link
+                to="contents"
+                className="cursor-pointer md:text-[21px] block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500  "
               >
                 Contents
-              </a>
+              </Link>
             </li>
             <li>
               <button
                 type="button"
-                className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                className="md:text-[21px] text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center "
               >
                 Go Premium
               </button>

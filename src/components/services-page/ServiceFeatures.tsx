@@ -4,7 +4,7 @@ import ServiceFeature from "./ServiceFeature";
 const ServiceFeatures = () => {
   return (
     <section className="mx-auto">
-      <section className="max-container px-4 grid place-items-center grid-cols-1  lg:grid-cols-2 gap-y-10 ">
+      <section className="max-container px-4 grid place-items-center grid-cols-3  max-[1450px]:grid-cols-2 max-[920px]:grid-cols-1 gap-y-10 gap-x-10">
         <ServiceFeature
           icon={assets.listen}
           title="Listen and Follow along"
@@ -44,6 +44,7 @@ const ServiceFeatures = () => {
           contentOne="It’s ok If you don’t want to share or create."
           contentTwo="You just download it and study it by yourself."
         />
+
         <ServiceFeature
           icon={assets.meeting}
           iconTwo={assets.students}
@@ -55,18 +56,7 @@ const ServiceFeatures = () => {
           title="Homepage for your own group"
           contentOne="We offer you the ability to customize the main page for your groups."
         />
-        <ServiceFeature
-          icon={assets.meeting}
-          iconTwo={assets.students}
-          title="Create your own group"
-          contentOne="You can create several classes in your groups."
-        />
-        <ServiceFeature
-          icon={assets.home}
-          title="Homepage for your own group"
-          contentOne="We offer you the ability to customize the main page for your groups."
-        />
-        <div>
+        <div className="max-[1450px]:col-span-2 max-[920px]:col-span-1 flex max-[1450px]:justify-center max-[920px]:justify-start">
           <ServiceFeature
             icon={assets.copy}
             title="It’s enough to create content by using copy & paste"
