@@ -30,7 +30,7 @@ const Contents = () => {
           </div>
 
           <aside className="overflow-x-auto w-[700px] max-md:max-w-full mx-auto">
-            <div className="w-full  bg-gradient-to-br from-yellow-50 via-cyan-500 to-blue-800 py-2 mt-6 mb-3 whitespace-nowrap">
+            <div className="w-full  bg-gradient-to-br from-yellow-50 via-cyan-500 to-blue-800 h-[50px] my-auto flex items-center justify-center mt-6 mb-3 whitespace-nowrap">
               <ul className="flex items-center md:justify-center  w-full overflow-x-auto px-5">
                 <li className="me-5">
                   <button
@@ -105,18 +105,6 @@ const Contents = () => {
                     } font-semibold text-[18px] md:text-[24px]`}
                   >
                     Health
-                  </button>
-                </li>
-                <li>
-                  <button
-                    onClick={() => setSelectedType("food")}
-                    className={`${
-                      selectedType === "food"
-                        ? "text-white border-b-[4px] border-white"
-                        : "text-white opacity-50"
-                    } font-semibold text-[18px] md:text-[24px]`}
-                  >
-                    Food
                   </button>
                 </li>
               </ul>
