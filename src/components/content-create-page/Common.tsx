@@ -31,23 +31,6 @@ const Common = ({
   };
   return (
     <section>
-      <div>
-        <label htmlFor="type" className="md:text-[21px] font-semibold">
-          Content type
-        </label>
-        <select
-          name="type"
-          id="type"
-          className="block w-full text-[21px] max-md:text-[15px] p-2 border border-gray-300 rounded-md mt-1 focus:outline-none focus:ring-1 focus:border-blue-300"
-        >
-          <option value="practice" className="max-md:text-[15px] text-[21px]">
-            Speaking practice
-          </option>
-          <option value="card" className="max-md:text-[15px] text-[21px]">
-            Flash Cards
-          </option>
-        </select>
-      </div>
       <div className="mt-5">
         <label htmlFor="language" className="md:text-[21px] font-semibold">
           Select Language

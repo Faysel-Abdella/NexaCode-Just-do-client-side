@@ -2,14 +2,20 @@ import { useState } from "react";
 
 import Common from "../components/content-create-page/Common";
 import Practice from "../components/content-create-page/Practice";
+import Vocabulary from "../components/content-create-page/Vocabulary";
 
 const ContentCreate = () => {
+  const [selectedType, setSelectedType] = useState<"practice" | "card">(
+    "practice"
+  );
+
   const [selectedLanguage, setSelectedLanguage] = useState<"EN" | "KR">("EN");
   const [title, setTitle] = useState<string>("");
   const [imagePath, setImagePath] = useState<string | null>(null);
   const [description, setDescription] = useState<string>("");
 
   const handleSubmit = () => {
+    // Peter, you can use these values to create a new content. This is as example.
     console.log("Selected language: ", selectedLanguage);
     console.log("Title: ", title);
     console.log("Image URL: ", imagePath);
@@ -23,13 +29,37 @@ const ContentCreate = () => {
 
       <main className="mt-10 md:mt-20">
         {/* Common for both practice and vocabulary flash card */}
+        <div>
+          <label htmlFor="type" className="md:text-[21px] font-semibold">
+            Content type
+          </label>
+          <select
+            name="type"
+            id="type"
+            className="block w-full text-[21px] max-md:text-[15px] p-2 border border-gray-300 rounded-md mt-1 focus:outline-none focus:ring-1 focus:border-blue-300"
+            onChange={(e) =>
+              setSelectedType(e.target.value as "practice" | "card")
+            }
+          >
+            <option value="practice" className="max-md:text-[15px] text-[21px]">
+              Speaking practice
+            </option>
+            <option value="card" className="max-md:text-[15px] text-[21px]">
+              Flash Cards
+            </option>
+          </select>
+        </div>
         <Common
           setSelectedLanguage={setSelectedLanguage}
           setTitle={setTitle}
           setImagePath={setImagePath}
         />
         {/* Changeable */}
-        <Practice setDescription={setDescription} />
+        {selectedType === "practice" ? (
+          <Practice setDescription={setDescription} />
+        ) : (
+          <Vocabulary />
+        )}
       </main>
       <footer className="flex justify-center items-center mt-7 border-t-[4px] border-gray-900 pt-5">
         <button
