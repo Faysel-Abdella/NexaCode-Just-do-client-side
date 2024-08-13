@@ -53,13 +53,14 @@ const ContentCreate = () => {
           setSelectedLanguage={setSelectedLanguage}
           setTitle={setTitle}
           setImagePath={setImagePath}
-        />
-        {/* Changeable */}
-        {selectedType === "practice" ? (
-          <Practice setDescription={setDescription} />
-        ) : (
-          <Vocabulary />
-        )}
+        >
+          {/* Changeable */}
+          {selectedType === "practice" ? (
+            <Practice setDescription={setDescription} />
+          ) : (
+            <Vocabulary />
+          )}
+        </Common>
       </main>
       <footer className="flex justify-center items-center mt-7 border-t-[4px] border-gray-900 pt-5">
         <button

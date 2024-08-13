@@ -69,9 +69,9 @@ const Vocabulary = () => {
           })}
         </section>
 
-        <div className="flex justify-center items-center">
+        <div className="flex justify-center items-center mt-4">
           <button
-            className="text-white focus:ring-4 font-medium rounded-lg text-sm md:text-lg px-5 md:px-9 py-2.5 md:py-3 me-2 mb-2 bg-blue-600 hover:bg-blue-700 focus:outline-none"
+            className="text-white font-semibold focus:ring-4  rounded-lg text-sm md:text-lg px-5 md:px-9 py-2.5 md:py-3 me-2 mb-2 bg-blue-600 hover:bg-blue-700 focus:outline-none"
             onClick={() =>
               setCards((prevCards) => [...prevCards, prevCards.length])
             }
