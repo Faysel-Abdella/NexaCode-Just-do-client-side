@@ -45,14 +45,78 @@ const Contents = () => {
                   </button>
                 </li>
 
-                <li className="me-5">Test</li>
-                <li className="me-5">School</li>
-                <li className="me-5">Life</li>
-                <li className="me-5">Business</li>
-                <li className="me-5">Health</li>
-                <li className="me-5">Food</li>
-                <li className="me-5">Food</li>
-                <li className="me-5">Food</li>
+                <li className="me-5">
+                  <button
+                    onClick={() => setSelectedType("test")}
+                    className={`${
+                      selectedType === "test"
+                        ? "text-white border-b-[4px] border-white"
+                        : "text-white opacity-50"
+                    } font-semibold text-[18px] md:text-[24px]`}
+                  >
+                    Test
+                  </button>
+                </li>
+                <li className="me-5">
+                  <button
+                    onClick={() => setSelectedType("school")}
+                    className={`${
+                      selectedType === "school"
+                        ? "text-white border-b-[4px] border-white"
+                        : "text-white opacity-50"
+                    } font-semibold text-[18px] md:text-[24px]`}
+                  >
+                    School
+                  </button>
+                </li>
+                <li className="me-5">
+                  <button
+                    onClick={() => setSelectedType("life")}
+                    className={`${
+                      selectedType === "life"
+                        ? "text-white border-b-[4px] border-white"
+                        : "text-white opacity-50"
+                    } font-semibold text-[18px] md:text-[24px]`}
+                  >
+                    Life
+                  </button>
+                </li>
+                <li className="me-5">
+                  {" "}
+                  <button
+                    onClick={() => setSelectedType("business")}
+                    className={`${
+                      selectedType === "business"
+                        ? "text-white border-b-[4px] border-white"
+                        : "text-white opacity-50"
+                    } font-semibold text-[18px] md:text-[24px]`}
+                  >
+                    Business
+                  </button>
+                </li>
+                <li className="me-5">
+                  {" "}
+                  <button
+                    onClick={() => setSelectedType("health")}
+                    className={`${
+                      selectedType === "health"
+                        ? "text-white border-b-[4px] border-white"
+                        : "text-white opacity-50"
+                    } font-semibold text-[18px] md:text-[24px]`}
+                  >
+                    Health
+                  </button>
+                </li>
+                <button
+                  onClick={() => setSelectedType("food")}
+                  className={`${
+                    selectedType === "food"
+                      ? "text-white border-b-[4px] border-white"
+                      : "text-white opacity-50"
+                  } font-semibold text-[18px] md:text-[24px]`}
+                >
+                  Food
+                </button>
               </ul>
             </div>
           </aside>
