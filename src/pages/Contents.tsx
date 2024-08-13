@@ -107,16 +107,18 @@ const Contents = () => {
                     Health
                   </button>
                 </li>
-                <button
-                  onClick={() => setSelectedType("food")}
-                  className={`${
-                    selectedType === "food"
-                      ? "text-white border-b-[4px] border-white"
-                      : "text-white opacity-50"
-                  } font-semibold text-[18px] md:text-[24px]`}
-                >
-                  Food
-                </button>
+                <li>
+                  <button
+                    onClick={() => setSelectedType("food")}
+                    className={`${
+                      selectedType === "food"
+                        ? "text-white border-b-[4px] border-white"
+                        : "text-white opacity-50"
+                    } font-semibold text-[18px] md:text-[24px]`}
+                  >
+                    Food
+                  </button>
+                </li>
               </ul>
             </div>
           </aside>
