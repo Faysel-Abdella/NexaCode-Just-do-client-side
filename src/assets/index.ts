@@ -55,6 +55,7 @@ import imageUpload from "./icons/login-page/add-image.svg";
 import info from "./icons/login-page/info.svg";
 import voice from "./icons/login-page/voice.svg";
 
+import explore from "./icons/contents-page/explore.svg";
 export default {
   hero,
   feature01,
@@ -112,4 +113,6 @@ export default {
   imageUpload,
   info,
   voice,
+
+  explore,
 };

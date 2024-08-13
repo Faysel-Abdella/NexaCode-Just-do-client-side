@@ -5,6 +5,7 @@ import FeaturesPage from "./pages/FeaturesPage";
 import ServicesPage from "./pages/ServicesPage";
 import LoginPage from "./pages/LoginPage";
 import ContentCreate from "./pages/ContentCreate";
+import Contents from "./pages/Contents";
 
 const router = createBrowserRouter([
   {
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
   {
     path: "/content-create",
     element: <ContentCreate />,
+  },
+  {
+    path: "/contents",
+    element: <Contents />,
   },
 ]);
 
