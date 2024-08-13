@@ -35,7 +35,11 @@ const Contents = () => {
                 <li className="me-5">
                   <button
                     onClick={() => setSelectedType("all")}
-                    className="${selectedType === 'all' ? 'text-white border-b-[4px] border-white' : 'text-white opacity-50'} font-semibold text-[18px] md:text-[24px]"
+                    className={`${
+                      selectedType === "all"
+                        ? "text-white border-b-[4px] border-white"
+                        : "text-white opacity-50"
+                    } font-semibold text-[18px] md:text-[24px]`}
                   >
                     All
                   </button>
