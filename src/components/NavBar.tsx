@@ -177,7 +177,7 @@ const NavBar = () => {
                 <ul
                   className={`${
                     isMenuOpen ? "" : "hidden"
-                  } absolute bg-white md:top-10 top-8 left-0 md:w-[120px] w-[70px] `}
+                  } absolute bg-white shadow-lg border-[1px] rounded-lg border-slate-400 md:top-10 top-8 left-0 md:w-[120px] w-[70px] `}
                 >
                   <li
                     className="p-2 cursor-pointer hover:bg-gray-200 "

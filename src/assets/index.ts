@@ -51,6 +51,10 @@ import globalBlack from "./icons/login-page/global.svg";
 import downBlack from "./icons/login-page/down-arrow.svg";
 import password from "./icons/login-page/password.svg";
 
+import imageUpload from "./icons/login-page/add-image.svg";
+import info from "./icons/login-page/info.svg";
+import voice from "./icons/login-page/voice.svg";
+
 export default {
   hero,
   feature01,
@@ -104,4 +108,8 @@ export default {
   globalBlack,
   downBlack,
   password,
+
+  imageUpload,
+  info,
+  voice,
 };

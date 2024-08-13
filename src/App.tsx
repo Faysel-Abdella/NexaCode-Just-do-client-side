@@ -4,6 +4,7 @@ import "./App.css";
 import FeaturesPage from "./pages/FeaturesPage";
 import ServicesPage from "./pages/ServicesPage";
 import LoginPage from "./pages/LoginPage";
+import ContentCreate from "./pages/ContentCreate";
 
 const router = createBrowserRouter([
   {
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
   {
     path: "/login",
     element: <LoginPage />,
+  },
+  {
+    path: "/content-create",
+    element: <ContentCreate />,
   },
 ]);
 
