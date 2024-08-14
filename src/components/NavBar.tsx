@@ -157,6 +157,7 @@ const NavBar = () => {
                 <button
                   type="button"
                   className="md:text-[21px] text-white font-semibold bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300  rounded-lg text-sm px-4 py-3 text-center "
+                  onClick={() => setNavBar(false)}
                 >
                   Go Premium
                 </button>

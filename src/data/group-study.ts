@@ -5,13 +5,14 @@ const groupContents = [
     id: "1",
     thumbnail: assets.groupStudy,
     title: "Marvel SPIDER-MAN ",
-    description: "All about Marvel Spider-man series",
+    description: "All about Marvel Spider-man series  ",
   },
   {
     id: "2",
     thumbnail: assets.groupStudy02,
     title: "Explore NASA",
-    description: "High-resolution pictures of space & terms ",
+    description:
+      "High-resolution pictures of space & terms with NASA. Discover the universe",
   },
   {
     id: "3",
