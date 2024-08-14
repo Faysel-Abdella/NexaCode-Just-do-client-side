@@ -231,8 +231,30 @@ const Contents = () => {
                 );
               })}
             </div>
+            <div className="flex justify-center items-center mt-5 md:mt-10">
+              <button className=" text-white font-semibold focus:ring-4  rounded-lg text-sm md:text-xl px-5 md:px-9 py-2.5 md:py-3 me-2 mb-2 bg-blue-600 hover:bg-blue-700 focus:outline-none">
+                More
+              </button>
+            </div>
           </main>
         </main>
+
+        <footer className=" mt-10 border-t-[3px] border-gray-800 pt-10 px-5 pb-10">
+          <div className="flex items-center gap-2 text-[12px] md:text-[20px]">
+            <button className="text-[#767678] border-r border-slate-900 pr-2 md:pr-5 ">
+              Terms of Use
+            </button>
+            <button className="text-[#767678] border-r border-slate-900 pr-2 md:pr-5 pl-2 md:pl-5">
+              Privacy Policy
+            </button>
+            <p className="text-[#767678] border-r border-slate-900 pr-2 md:pr-5 pl-2 md:pl-5">
+              supprot@justDO.com
+            </p>
+          </div>
+          <p className="text-[#767678] text-[12px] md:text-[20px] font-semibold mt-5">
+            © THE RAYS Corporation
+          </p>
+        </footer>
       </section>
     </section>
   );
