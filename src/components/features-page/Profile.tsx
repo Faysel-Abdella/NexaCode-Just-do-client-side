@@ -53,7 +53,7 @@ const Profile = () => {
         </span>
       </h2>
 
-      <article className="md:flex md:items-center md:justify-center gap-5 md:text-[22px]">
+      <article className="md:flex md:items-center md:justify-center gap-20 md:text-[22px]">
         <div className="flex justify-between items-center ">
           <img src={assets.practiceImage01} alt="Profile" />
           <img src={assets.practiceImage02} alt="Profile" />
@@ -88,7 +88,7 @@ const Profile = () => {
         </div>
       </article>
 
-      <article className="md:flex md:items-center md:justify-center gap-5 md:text-[22px]">
+      <article className="md:flex md:items-center md:justify-center gap-20 md:text-[22px]  mt-16 md:mt-10">
         <div className="flex justify-between items-center">
           <img src={assets.flashCard} alt="Profile" />
           <img src={assets.flashCard02} alt="Profile" />
@@ -119,7 +119,7 @@ const Profile = () => {
         </div>
       </article>
 
-      <article className="md:flex md:items-center md:justify-center gap-5">
+      <article className="md:flex md:items-center md:justify-center gap-20 mt-16 md:mt-10">
         <div className="flex justify-between items-center ">
           <img src={assets.infoImage01} alt="Profile" />
           <img src={assets.infoImage02} alt="Profile" />

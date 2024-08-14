@@ -12,7 +12,7 @@ const ServicePage = () => {
   };
 
   return (
-    <section className="max-container pb-10">
+    <section className="max-container pb-10" id="home">
       <Hero />
       <Steps />
       <ServiceFeatures />

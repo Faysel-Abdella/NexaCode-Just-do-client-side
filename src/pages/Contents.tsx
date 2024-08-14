@@ -15,7 +15,7 @@ const Contents = () => {
   const [isSortOpen, setIsSortOpen] = useState(false);
   const [sort, setSort] = useState<"All" | "Recent">("All");
   return (
-    <section className="max-container pt-7 md:pt-10 font-poppins">
+    <section className="max-container pt-7 md:pt-10 font-poppins" id="contents">
       <section>
         <header>
           <div className="flex items-center justify-center gap-32 md:gap-48 ">
