@@ -1,11 +1,21 @@
 import { useState } from "react";
 
 import assets from "../assets/index";
+import privateContents from "../data/private-contents";
+import groupContents from "../data/group-study";
+
+import PrivateStudy from "../components/contents-page/PrivateStudy";
+import GroupStudy from "../components/contents-page/GroupStudy";
 
 const Contents = () => {
   const [selectedType, setSelectedType] = useState("all");
+  const [language, setLanguage] = useState("EN");
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const [isSortOpen, setIsSortOpen] = useState(false);
+  const [sort, setSort] = useState<"All" | "Recent">("All");
   return (
-    <section className="max-container pt-7 md:pt-10 ">
+    <section className="max-container pt-7 md:pt-10 font-poppins">
       <section>
         <header>
           <div className="flex items-center justify-center gap-32 md:gap-48 ">
@@ -110,8 +120,119 @@ const Contents = () => {
               </ul>
             </div>
           </aside>
+
+          <div className="flex justify-center mt-1  md:mt-5">
+            <ul className="flex  items-center gap-14 md:gap-20">
+              <div
+                className=" flex items-center gap-2 cursor-pointer relative z-40"
+                onClick={() => setIsMenuOpen(!isMenuOpen)}
+              >
+                <img
+                  src={assets.globalBlack}
+                  alt="home"
+                  className="md:scale-125"
+                />
+                <button className="md:text-[25px] font-extrabold text-[#767678]">
+                  {language}
+                </button>
+
+                <ul
+                  className={`${
+                    isMenuOpen ? "" : "hidden"
+                  } absolute bg-slate-800 md:top-14 top-8 right-0 md:w-[120px] w-[70px]`}
+                >
+                  <li
+                    className="p-2 cursor-pointer hover:bg-slate-400 text-white"
+                    onClick={() => setLanguage("EN")}
+                  >
+                    EN
+                  </li>
+                  <li
+                    className="p-2 cursor-pointer hover:bg-slate-400 text-white"
+                    onClick={() => setLanguage("KR")}
+                  >
+                    KR
+                  </li>
+                </ul>
+              </div>
+              <div
+                className=" flex items-center gap-2 cursor-pointer relative z-40"
+                onClick={() => setIsSortOpen(!isSortOpen)}
+              >
+                <button className="md:text-[25px] font-extrabold text-[#767678]">
+                  {sort}
+                </button>
+                <img
+                  src={assets.downBlack}
+                  alt="arrow"
+                  className="md:size-7 h-[15px] w-[20px]"
+                />
+
+                <ul
+                  className={`${
+                    isSortOpen ? "" : "hidden"
+                  } absolute bg-slate-800 md:top-14 top-8 right-0 md:w-[120px] w-[70px]`}
+                >
+                  <li
+                    className="p-2 cursor-pointer hover:bg-slate-400 text-white"
+                    onClick={() => setSort("All")}
+                  >
+                    All
+                  </li>
+                  <li
+                    className="p-2 cursor-pointer hover:bg-slate-400 text-white"
+                    onClick={() => setSort("Recent")}
+                  >
+                    Recent
+                  </li>
+                </ul>
+              </div>
+            </ul>
+          </div>
         </header>
-        <main className="px-3"></main>
+        <main className="px-3 flex justify-center items-center mt-6 md:mt-14 pb-10">
+          <main>
+            <div className="flex flex-wrap justify-center items-center ">
+              {privateContents.map((content, index) => {
+                return (
+                  <PrivateStudy
+                    key={index}
+                    thumbnail={content.thumbnail}
+                    type={index % 2 === 0 ? "practice" : "vocabulary"}
+                    title={content.title}
+                    profile={content.profile}
+                    userName={content.userName}
+                    downloadCompleted={content.downloadCompleted}
+                    totalDownloads={content.totalDownloads}
+                  />
+                );
+              })}
+            </div>
+
+            <div className="flex justify-center items-center mt-5 md:mt-10">
+              <button className=" text-white font-semibold focus:ring-4  rounded-lg text-sm md:text-xl px-5 md:px-9 py-2.5 md:py-3 me-2 mb-2 bg-blue-600 hover:bg-blue-700 focus:outline-none">
+                More
+              </button>
+            </div>
+
+            <h2 className="text-[20px] md:text-[26px] font-bold text-center pt-10 pb-8">
+              How about group study?
+            </h2>
+
+            <div className="flex flex-wrap justify-center items-center">
+              {groupContents.map((content, index) => {
+                return (
+                  <GroupStudy
+                    key={index}
+                    thumbnail={content.thumbnail}
+                    title={content.title}
+                    description={content.description}
+                  />
+                );
+              })}
+            </div>
+          </main>
+        </main>
       </section>
     </section>
   );

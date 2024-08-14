@@ -56,6 +56,31 @@ import info from "./icons/login-page/info.svg";
 import voice from "./icons/login-page/voice.svg";
 
 import explore from "./icons/contents-page/explore.svg";
+import download from "./icons/contents-page/download_cloud.svg";
+import downloadCompleted from "./icons/contents-page/download_completed.svg";
+import share from "./icons/contents-page/share.svg";
+import practice from "./icons/contents-page/practice.svg";
+import vocabularyCard from "./icons/contents-page/flashcard.svg";
+import thumbnail from "./images/contents-page/content_image.png";
+import thumbnail02 from "./images/contents-page/content_image_2.png";
+import thumbnail03 from "./images/contents-page/content_image_3.png";
+import thumbnail04 from "./images/contents-page/content_image_4.png";
+import thumbnail05 from "./images/contents-page/content_image_5.png";
+import thumbnail06 from "./images/contents-page/content_image_6.png";
+import thumbnail07 from "./images/contents-page/content_image_7.png";
+import thumbnail08 from "./images/contents-page/content_image_8.png";
+import thumbnail09 from "./images/contents-page/content_image_9.png";
+
+import groupStudy from "./images/contents-page/group_study.png";
+import groupStudy02 from "./images/contents-page/group_study_02.png";
+import groupStudy03 from "./images/contents-page/group_study_03.png";
+import groupStudy04 from "./images/contents-page/group_study_04.png";
+import groupStudy05 from "./images/contents-page/group_study_05.png";
+import groupStudy06 from "./images/contents-page/group_study_06.png";
+import groupStudy07 from "./images/contents-page/group_study_07.png";
+import groupStudy08 from "./images/contents-page/group_study_08.png";
+import groupStudy09 from "./images/contents-page/group_study_09.png";
+
 export default {
   hero,
   feature01,
@@ -115,4 +140,28 @@ export default {
   voice,
 
   explore,
+  download,
+  downloadCompleted,
+  share,
+  practice,
+  vocabularyCard,
+  thumbnail,
+  thumbnail02,
+  thumbnail03,
+  thumbnail04,
+  thumbnail05,
+  thumbnail06,
+  thumbnail07,
+  thumbnail08,
+  thumbnail09,
+
+  groupStudy,
+  groupStudy02,
+  groupStudy03,
+  groupStudy04,
+  groupStudy05,
+  groupStudy06,
+  groupStudy07,
+  groupStudy08,
+  groupStudy09,
 };

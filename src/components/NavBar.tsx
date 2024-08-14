@@ -142,7 +142,7 @@ const NavBar = () => {
     //   </nav>
     // </header>
 
-    <nav className=" bg-white  fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600 font-poppins">
+    <nav className=" bg-white  fixed w-full z-50 top-0 start-0 border-b border-gray-200 dark:border-gray-600 font-poppins">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between  mx-auto p-4 max-md:py-2">
         <Link
           to="home"
