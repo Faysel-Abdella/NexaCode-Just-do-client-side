@@ -20,7 +20,7 @@ const GroupStudy = ({
         </h2>
       </div>
       <div className="h-[60px]">
-        <p className="text-[12px] md:text-[16px] px-2 text-gray-400 line-clamp-3 ">
+        <p className="text-[12px] md:text-[16px] px-2 text-gray-800 line-clamp-3 ">
           {description}
         </p>
       </div>

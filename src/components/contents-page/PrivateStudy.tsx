@@ -29,6 +29,7 @@ const PrivateStudy = ({
           <img
             src={type === "practice" ? assets.practice : assets.vocabularyCard}
             className="size-[30px] absolute bottom-0 left-0"
+            alt="card"
           />
         </div>
         <div className="border-b border-gray-900 pb-4 w-[220px]">
